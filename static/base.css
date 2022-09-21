@@ -1,0 +1,49 @@
+* {
+  font-family: monospace;
+}
+
+.content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding-top: 20px;
+  padding-left: 220px;
+  padding-right: 100px;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  overflow: scroll;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  border-bottom: 1px solid rgb(91, 181, 255);
+  width: 100%;
+  color: rgb(92, 143, 255);
+}
+
+body {
+  background-color: #2e2e2e;
+  color: white;
+  font-size: larger;
+}
+
+a {
+  color: #ffdd00;
+  text-decoration: none;
+}
+
+code {
+  box-sizing: border-box;
+  display: block;
+  padding: 10px;
+  background-color: #2e2e2e !important;
+  color: white;
+  font-size: larger;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin: 10px 0;
+}

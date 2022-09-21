@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Doc runner</title>
+  <meta charset='utf-8'>
+  <meta property='og:title' content='<%=title%> | how-to.repl.co'>
+  <meta name='description' content='<%=title%> on how-to.repl.co.'>
+  <meta property='og:description' content='<%=title%> on how-to.repl.co.'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/static/base.css">
+  <link rel="stylesheet" href="/static/sidebar.css">
+</head>
+
+<body>
+  <div class="content">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h3>aaaaa</h3>
+      </div>
+      <div class="sidebar-comp">
+        <% files.forEach(file => { %>
+          <li><a href="<%=file.url%>"><%=file.name%></a></li>
+        <% }) %>  
+      </div>
+    </div>
+    <p style="margin-top:0;width:90%;">
+      <%=dir%>
+    </p>
+    <hr>
+    <div id="article">
+      <%-md%>
+    </div>
+    <br>
+    <p style="font-size:x-small;"></p>
+  </div>
+</body>
+
+</html>
